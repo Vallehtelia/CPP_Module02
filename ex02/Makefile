@@ -1,5 +1,5 @@
-NAME = Harl
-SRC = Harl.cpp main.cpp
+NAME = Fixed
+SRC = main.cpp Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
 COMPILER = c++
 FLAGS = -Wall -Wextra -Werror
