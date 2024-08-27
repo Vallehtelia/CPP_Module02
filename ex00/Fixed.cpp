@@ -1,7 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/27 11:04:53 by vvaalant          #+#    #+#             */
+/*   Updated: 2024/08/27 11:05:11 by vvaalant         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Fixed.hpp"
-
-const int  Fixed::_fractional_bits = 8;
 
 Fixed::Fixed() : _fixed_point(0) {
     std::cout << "Default constructor called\n";

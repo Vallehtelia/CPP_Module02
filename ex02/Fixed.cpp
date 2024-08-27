@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/27 11:19:01 by vvaalant          #+#    #+#             */
+/*   Updated: 2024/08/27 13:28:30 by vvaalant         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Fixed.hpp"
 
@@ -124,4 +135,29 @@ std::ostream &operator<<(std::ostream &out, const Fixed &fixed)
 {
     out << fixed.toFloat();
     return (out);
+}
+
+Fixed    &Fixed::min(Fixed &other1, Fixed &other2)
+{
+    if (other1.toFloat() <= other2.toFloat())
+        return (other1);
+    return (other2);
+}
+const Fixed    &Fixed::min(Fixed const &other1, Fixed const &other2)
+{
+    if (other1.toFloat() <= other2.toFloat())
+        return (other1);
+    return (other2);
+}
+Fixed    &Fixed::max(Fixed &other1, Fixed &other2)
+{
+    if (other1.toFloat() >= other2.toFloat())
+        return (other1);
+    return (other2);
+}
+const Fixed    &Fixed::max(Fixed const &other1, Fixed const &other2)
+{
+    if (other1.toFloat() >= other2.toFloat())
+        return (other1);
+    return (other2);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/27 11:05:02 by vvaalant          #+#    #+#             */
+/*   Updated: 2024/08/27 11:05:12 by vvaalant         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FIXED_HPP
 # define FIXED_HPP
 
@@ -7,7 +19,7 @@ class   Fixed
 {
     private:
         int                 _fixed_point;
-        static const int    _fractional_bits;
+        static const int    _fractional_bits = 8;
     public:
         Fixed();
         Fixed(Fixed const &other);
