@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 11:04:53 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/08/27 11:05:11 by vvaalant         ###   ########.fr       */
+/*   Updated: 2024/08/28 18:10:39 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Fixed &Fixed::operator=(Fixed const &other)
     return (*this);
 }
 
-int Fixed::getRawBits()
+int Fixed::getRawBits() const
 {
     std::cout << "getRawBits member function called\n";
     return (this->_fixed_point);

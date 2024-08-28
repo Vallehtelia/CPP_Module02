@@ -6,7 +6,7 @@
 /*   By: vvaalant <vvaalant@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 11:05:02 by vvaalant          #+#    #+#             */
-/*   Updated: 2024/08/27 11:05:12 by vvaalant         ###   ########.fr       */
+/*   Updated: 2024/08/28 18:10:37 by vvaalant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class   Fixed
         Fixed &operator=(Fixed const &other);
         ~Fixed();
 
-        int     getRawBits();
+        int     getRawBits() const;
         void    setRawBits(int const raw);
 };
 
